@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Prominent Disclosure\nand\nConsent Requirement"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:paddingHorizontal="20px"
+        android:text="This app makes use of the accessibility service.\nYou need to grant this permission by tapping the below button which will take you to:\nSettings / Accessibility / Downloaded apps.\n\nHow it works:\nYou have the world at your fingertips, but when you want to turn off the screen you need to hold the phone with two hands...\n LockScreen by naiveHA is here to help you\nWhen you tap the app icon, the app launches and, soon after, navigates to this screen.\nThis transition is detected by the accessibility service (AccessibilityEvent.TYPE_WINDOW_STATE_CHANGE)\nwhich then proceeds to turn off the screen.\nFollowing this, the app moves to background such that when you unlock the screen again, the home screen is shown.\n\nThe source code of the app is open and available on github:\nhttps://github.com/naive-HA/LockScreen\n\nThe app does not require any other permissions and does not collect any data.\nThe app does not access user's phone contacts nor the location.\nThe app does not display any ads.\n\nThis is just an app which brings the screen lcok button within the reach of your thumb"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="navigateToSettings"
+        android:text="I agree and consent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+</androidx.constraintlayout.widget.ConstraintLayout>

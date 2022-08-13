@@ -1,0 +1,14 @@
+Index: app/src/main/res/layout/activity_secondary.xml
+===================================================================
+diff --git a/app/src/main/res/layout/activity_secondary.xml b/app/src/main/res/layout/activity_secondary.xml
+new file mode 100644
+--- /dev/null	
++++ b/app/src/main/res/layout/activity_secondary.xml	
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="utf-8"?>
++<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent">
++
++</LinearLayout>
+\ No newline at end of file
