@@ -6,14 +6,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="navigateToSettings"
+        android:text="I grant permission to AccessibilityService API"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Prominent Disclosure\nand\nConsent Requirement"
+        android:text="Prominent Disclosure and\nConsent Requirement"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,24 +35,27 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:paddingHorizontal="20px"
-        android:text="This app makes use of the accessibility service.\nYou need to grant this permission by tapping the below button which will take you to:\nSettings / Accessibility / Downloaded apps.\n\nHow it works:\nYou have the world at your fingertips, but when you want to turn off the screen you need to hold the phone with two hands...\n LockScreen by naiveHA is here to help you\nWhen you tap the app icon, the app launches and, soon after, navigates to this screen.\nThis transition is detected by the accessibility service (AccessibilityEvent.TYPE_WINDOW_STATE_CHANGE)\nwhich then proceeds to turn off the screen.\nFollowing this, the app moves to background such that when you unlock the screen again, the home screen is shown.\n\nThe source code of the app is open and available on github:\nhttps://github.com/naive-HA/LockScreen\n\nThe app does not require any other permissions and does not collect any data.\nThe app does not access user's phone contacts nor the location.\nThe app does not display any ads.\n\nThis is just an app which brings the screen lcok button within the reach of your thumb"
-        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:lineSpacingExtra="5sp"
+        android:paddingHorizontal="40px"
+        android:text="&quot;LockScreen by naiveHA&quot; does one thing and one thing only:\nthe app locks the screen when you the user so desire by tapping the app's icon.\nTo perform its only function, the app makes use of the AccessibilityService API.\nFor the app to use the AccessibilityService API you the user need to explicitly grant permission by pressing  the below purple button.\nWithout this permission, the app does not perform any action.\nOnce granted, the permission can be revoked at any time by navigating to:\nSettings / Accessibility / Downloaded apps\nAt any time the app does NOT collect any data. The app does NOT access phone contacts.  The app does NOT access the location. The app does NOT display any ads. &quot;LockScreen by naiveHA&quot; does one thing and one thing only: locks the screen when you tap its icon.\nYou can always inspect the source code at:\nhttps://github.com/naive-HA/LockScreen"
+        android:textAlignment="textStart"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="318dp"
+        android:layout_height="53dp"
         android:layout_marginTop="24dp"
-        android:onClick="navigateToSettings"
-        android:text="I agree and consent"
+        android:backgroundTint="#6C6C6C"
+        android:onClick="maybeLater"
+        android:text="Not now. Maybe later"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 </androidx.constraintlayout.widget.ConstraintLayout>

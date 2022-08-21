@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.CountDownTimer;
 import android.os.Bundle;
+import android.provider.Settings;
+import android.view.View;
+
 public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,5 +29,15 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(new Intent(MainActivity.this, SecondaryActivity.class));
             }
         }.start();
+    }
+    public void navigateToSettings(View view){
+        Intent settings = new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS);
+        startActivity(settings);
+        MainActivity.this.sendBroadcast(new Intent("finish_activity"));
+        MainActivity.this.finish();
+    }
+    public void maybeLater(View view){
+        MainActivity.this.sendBroadcast(new Intent("finish_activity"));
+        MainActivity.this.finish();
     }
 }

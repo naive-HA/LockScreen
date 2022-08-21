@@ -32,4 +32,8 @@ public class SecondaryActivity extends AppCompatActivity {
         SecondaryActivity.this.sendBroadcast(new Intent("finish_activity"));
         SecondaryActivity.this.finish();
     }
+    public void maybeLater(View view){
+        SecondaryActivity.this.sendBroadcast(new Intent("finish_activity"));
+        SecondaryActivity.this.finish();
+    }
 }
