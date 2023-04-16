@@ -5,11 +5,13 @@ Philosophy: You have the world at your finger tips, but you need to hold the pho
 # How does it work?
 "LockScreen by naiveHA" does one thing and one thing only: the app locks the screen when you, the user, so desire by tapping the app's icon.
 Watch this video for a demonstration:
+
 [![demonstration of concept](https://img.youtube.com/vi/IMocmDyAMuE/0.jpg)](https://www.youtube.com/watch?v=IMocmDyAMuE)
 
 To perform its only function, the app makes use of the AccessibilityService API. The use of AccessibilityService API is restricted to the app only: when you, the user launch the app the window change is noticed by the AccessibilityService which then proceeds to lock the screen.
 For the app to use the AccessibilityService API you the user need to explicitly grant permission by pressing the below purple button. Without this permission, the app does not perform any action. Watch this intro video demonstrating just that:
 [![demonstration of concept](https://img.youtube.com/vi/Pm_u0AZ_oa8/0.jpg)](https://www.youtube.com/watch?v=Pm_u0AZ_oa8)
+
 In Android 13, you will need to take an extra step: enable Accessiblity API by navigating to:
 ```
 Settings / Apps / LockScreen by naiveHA
