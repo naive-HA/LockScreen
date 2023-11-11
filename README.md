@@ -1,5 +1,5 @@
 # LockScreen by naiveHA
-Uncomplicated simple: it just does what it says it does 0 locks the screen with a touch of a button. Just one touch!
+Uncomplicated simple: it just does what it says it does. It locks the screen with a touch of a button. Just one touch!
 Philosophy: You have the world at your finger tips, but you need to hold the phone with two hands to turn off the screen... "LockScreen by NaiveHA" gives back the power to your thumb. For years Apple refused to make big screen phone because Steve Jobs believed the phone should be browsed with one hand only. So that you can hold the coffee with the other. "LockScreen by naiveHA" puts Steve Jobs dream in your hand. From now on, you can hold on to your coffee with one hand and browse the Internet with the other. And when you are done, you do not need to put the coffee down to turn off the screen: just tap "LockScreen by naiveHA" and get on with your day.
 
 # How does it work?
