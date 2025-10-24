@@ -1,0 +1,11 @@
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:packageNames="acab.naiveha.lockscreen"
+    android:accessibilityFeedbackType="feedbackAllMask"
+    android:accessibilityEventTypes="typeAllMask"
+    android:accessibilityFlags="flagDefault"
+    android:canPerformGestures="false"
+    android:canRetrieveWindowContent="true"
+    android:canRequestEnhancedWebAccessibility="false"
+    android:canRequestFilterKeyEvents="false"
+    android:canRequestFingerprintGestures="false"
+    android:canRequestTouchExplorationMode="false"/>
