@@ -28,7 +28,7 @@ Settings / Accessibility / Downloaded apps
 ```
 At any time the app does NOT collect any data. The app does NOT access phone contacts. The app does NOT access the location. The app does NOT display any ads. "LockScreen by naiveHA" does one thing and one thing only: locks the screen when you tap its icon.
 
-The app can be purchased from Google Play store:
-https://play.google.com/store/apps/details?id=com.naiveha.lockscreen&hl=en_US
-or you can clone this repository and built it yourself
-Don't forget to leave some feedback!
+If you like it, remember to donate some satoshi/BTC to:
+
+1HwgShr1TniuBxNQwy2xAhpQaNuZhtw6sh
+

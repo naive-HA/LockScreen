@@ -6,17 +6,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SecondaryActivity">
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="116dp"
         android:onClick="navigateToSettings"
         android:text="Grant permission to AccessibilityService API"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="318dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#6C6C6C"
+        android:onClick="maybeLater"
+        android:text="Not now. Maybe later"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <TextView
         android:id="@+id/textView8"
@@ -46,16 +60,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="318dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="#6C6C6C"
-        android:onClick="maybeLater"
-        android:text="Not now. Maybe later"
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5sp"
+        android:onClick="copyToClipboard"
+        android:paddingHorizontal="40dp"
+        android:text="If you like it, remember to donate some satoshi/BTC to:\n1HwgShr1TniuBxNQwy2xAhpQaNuZhtw6sh"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.475" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
