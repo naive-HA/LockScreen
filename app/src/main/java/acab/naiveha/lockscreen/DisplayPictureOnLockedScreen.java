@@ -9,7 +9,9 @@ import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
 import androidx.activity.EdgeToEdge;
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -54,6 +56,23 @@ public class DisplayPictureOnLockedScreen extends AppCompatActivity {
                 fullScreenImage.setScaleType(ImageView.ScaleType.FIT_CENTER);
             }
         }
+
+        OnBackPressedCallback callback = new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                mScaleFactor = 1.0f;
+                if (fullScreenImage != null) {
+                    fullScreenImage.setScaleX(mScaleFactor);
+                    fullScreenImage.setScaleY(mScaleFactor);
+                    fullScreenImage.setTranslationX(0f);
+                    fullScreenImage.setTranslationY(0f);
+                }
+                mLastTouchX = 0f;
+                mLastTouchY = 0f;
+                mActivePointerId = MotionEvent.INVALID_POINTER_ID;
+            }
+        };
+        getOnBackPressedDispatcher().addCallback(this, callback);
     }
 
     @Override
@@ -142,19 +161,5 @@ public class DisplayPictureOnLockedScreen extends AppCompatActivity {
         }
         LocalBroadcastManager.getInstance(DisplayPictureOnLockedScreen.this).sendBroadcast(new Intent("finish_activity"));
         this.finish();
-    }
-
-    @Override
-    public void onBackPressed() {
-        mScaleFactor = 1.0f;
-        if (fullScreenImage != null) {
-            fullScreenImage.setScaleX(mScaleFactor);
-            fullScreenImage.setScaleY(mScaleFactor);
-            fullScreenImage.setTranslationX(0f);
-            fullScreenImage.setTranslationY(0f);
-        }
-        mLastTouchX = 0f;
-        mLastTouchY = 0f;
-        mActivePointerId = MotionEvent.INVALID_POINTER_ID;
     }
 }
